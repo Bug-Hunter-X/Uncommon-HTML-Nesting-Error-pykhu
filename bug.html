@@ -1,0 +1,14 @@
+<p>This is a common issue in HTML where an element is nested incorrectly, leading to unexpected rendering or validation errors.</p><h1>Example of incorrect nesting:</h1><pre><code>&lt;div&gt;
+  &lt;p&gt;This is a paragraph&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;div&gt;This is a div inside an unordered list&lt;/div&gt; 
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre><p>The above code is incorrect because a &lt;div&gt; is nested inside the &lt;ul&gt; element.  Unordered list (&lt;ul&gt;) elements should only contain list items (&lt;li&gt;).</p><h1>Example of correct nesting:</h1><pre><code>&lt;div&gt;
+  &lt;p&gt;This is a paragraph&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt; 
+  &lt;/ul&gt;
+  &lt;div&gt;This is a div outside of the unordered list&lt;/div&gt;
+&lt;/div&gt;</code></pre><p>This corrected example demonstrates proper nesting. The &lt;div&gt; element is outside of the &lt;ul&gt; element, ensuring semantic correctness.</p>
